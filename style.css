@@ -38,24 +38,23 @@ main {
 }
 
 .container.image {
+  display: inherit;
   position: relative;
+  border-radius: 0 10px 10px 0;
+  background-color: hsl(277, 64%, 61%);
 }
 .container.image img {
   width: 100%;
   height: 100%;
+  position: relative;
+  background-size: cover;
+  border-radius: 0 10px 10px 0;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
 }
 
 .container.image img.mobile {
   display: none;
-}
-
-.container.image .span {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  background-color: var(--span);
-  opacity: 0.6;
 }
 
 .container.text {
